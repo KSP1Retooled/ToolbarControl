@@ -24,7 +24,6 @@ namespace ToolbarControl_NS
 
         private void Awake()
         {
-            introWindowId = GUIUtility.GetControlID(FocusType.Passive);
             DontDestroyOnLoad(this);
         }
 
@@ -47,6 +46,7 @@ namespace ToolbarControl_NS
 
         public void OnGUI()
         {
+            introWindowId = GUIUtility.GetControlID(FocusType.Passive);
             if (windowStyle == null)
             {
                 GUI.color = Color.grey;
